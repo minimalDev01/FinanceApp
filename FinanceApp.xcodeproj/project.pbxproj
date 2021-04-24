@@ -32,6 +32,8 @@
 		4925C3D826345F4F00F5C3B0 /* OnBoardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4925C3D726345F4F00F5C3B0 /* OnBoardingContainerViewController.swift */; };
 		4925C3DC2634607A00F5C3B0 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4925C3DB2634607A00F5C3B0 /* OnBoardingViewController.swift */; };
 		4925C3E02634664F00F5C3B0 /* OnBoardingStepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4925C3DF2634664F00F5C3B0 /* OnBoardingStepsViewController.swift */; };
+		49B47C222634BB6200D5B294 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B47C212634BB6200D5B294 /* TransactionsViewController.swift */; };
+		49B47C262634C31200D5B294 /* EmptyState.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49B47C252634C31200D5B294 /* EmptyState.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +61,8 @@
 		4925C3D726345F4F00F5C3B0 /* OnBoardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingContainerViewController.swift; sourceTree = "<group>"; };
 		4925C3DB2634607A00F5C3B0 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		4925C3DF2634664F00F5C3B0 /* OnBoardingStepsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingStepsViewController.swift; sourceTree = "<group>"; };
+		49B47C212634BB6200D5B294 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
+		49B47C252634C31200D5B294 /* EmptyState.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyState.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +205,8 @@
 			isa = PBXGroup;
 			children = (
 				4925C39B2634309E00F5C3B0 /* Transactions.storyboard */,
+				49B47C212634BB6200D5B294 /* TransactionsViewController.swift */,
+				49B47C252634C31200D5B294 /* EmptyState.xib */,
 			);
 			path = Transactions;
 			sourceTree = "<group>";
@@ -344,6 +350,7 @@
 				4925C3A7263432D500F5C3B0 /* Add.storyboard in Resources */,
 				4925C3BD2634340F00F5C3B0 /* SignIn.storyboard in Resources */,
 				4925C3C226344D3200F5C3B0 /* Colors.xcassets in Resources */,
+				49B47C262634C31200D5B294 /* EmptyState.xib in Resources */,
 				4925C365263423D000F5C3B0 /* Main.storyboard in Resources */,
 				4925C39C2634309E00F5C3B0 /* Transactions.storyboard in Resources */,
 				4925C3B12634332000F5C3B0 /* Statistics.storyboard in Resources */,
@@ -374,6 +381,7 @@
 				4925C3DC2634607A00F5C3B0 /* OnBoardingViewController.swift in Sources */,
 				4925C3E02634664F00F5C3B0 /* OnBoardingStepsViewController.swift in Sources */,
 				4925C35E263423D000F5C3B0 /* AppDelegate.swift in Sources */,
+				49B47C222634BB6200D5B294 /* TransactionsViewController.swift in Sources */,
 				4925C360263423D000F5C3B0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
