@@ -26,6 +26,8 @@
 		4925C3B12634332000F5C3B0 /* Statistics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4925C3B02634332000F5C3B0 /* Statistics.storyboard */; };
 		4925C3B72634333700F5C3B0 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4925C3B62634333700F5C3B0 /* Profile.storyboard */; };
 		4925C3BD2634340F00F5C3B0 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4925C3BC2634340F00F5C3B0 /* SignIn.storyboard */; };
+		4925C3C226344D3200F5C3B0 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4925C3C126344D3200F5C3B0 /* Colors.xcassets */; };
+		4925C3CE263453D900F5C3B0 /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4925C3CD263453D900F5C3B0 /* Shadow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		4925C3B02634332000F5C3B0 /* Statistics.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Statistics.storyboard; sourceTree = "<group>"; };
 		4925C3B62634333700F5C3B0 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		4925C3BC2634340F00F5C3B0 /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
+		4925C3C126344D3200F5C3B0 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		4925C3CD263453D900F5C3B0 /* Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,7 @@
 		4925C35C263423D000F5C3B0 /* FinanceApp */ = {
 			isa = PBXGroup;
 			children = (
+				4925C3CC263453B900F5C3B0 /* Extensions */,
 				4925C38C263426F300F5C3B0 /* Resources */,
 				4925C389263426B800F5C3B0 /* Base */,
 				4925C388263426A000F5C3B0 /* Application */,
@@ -129,6 +134,7 @@
 		4925C38C263426F300F5C3B0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4925C3C026344D1000F5C3B0 /* Colors */,
 				4925C38D2634271800F5C3B0 /* Images */,
 			);
 			path = Resources;
@@ -228,6 +234,22 @@
 			path = Budget;
 			sourceTree = "<group>";
 		};
+		4925C3C026344D1000F5C3B0 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				4925C3C126344D3200F5C3B0 /* Colors.xcassets */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		4925C3CC263453B900F5C3B0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4925C3CD263453D900F5C3B0 /* Shadow.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -308,6 +330,7 @@
 				4925C3B72634333700F5C3B0 /* Profile.storyboard in Resources */,
 				4925C3A7263432D500F5C3B0 /* Add.storyboard in Resources */,
 				4925C3BD2634340F00F5C3B0 /* SignIn.storyboard in Resources */,
+				4925C3C226344D3200F5C3B0 /* Colors.xcassets in Resources */,
 				4925C365263423D000F5C3B0 /* Main.storyboard in Resources */,
 				4925C39C2634309E00F5C3B0 /* Transactions.storyboard in Resources */,
 				4925C3B12634332000F5C3B0 /* Statistics.storyboard in Resources */,
@@ -333,6 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4925C362263423D000F5C3B0 /* ViewController.swift in Sources */,
+				4925C3CE263453D900F5C3B0 /* Shadow.swift in Sources */,
 				4925C35E263423D000F5C3B0 /* AppDelegate.swift in Sources */,
 				4925C360263423D000F5C3B0 /* SceneDelegate.swift in Sources */,
 			);
