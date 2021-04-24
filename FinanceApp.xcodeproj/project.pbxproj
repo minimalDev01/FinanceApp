@@ -13,6 +13,19 @@
 		4925C365263423D000F5C3B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4925C363263423D000F5C3B0 /* Main.storyboard */; };
 		4925C367263423D300F5C3B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4925C366263423D300F5C3B0 /* Assets.xcassets */; };
 		4925C36A263423D300F5C3B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4925C368263423D300F5C3B0 /* LaunchScreen.storyboard */; };
+		4925C3752634255900F5C3B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4925C361263423D000F5C3B0 /* ViewController.swift */; };
+		4925C3762634255900F5C3B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4925C35D263423D000F5C3B0 /* AppDelegate.swift */; };
+		4925C3772634255900F5C3B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4925C35F263423D000F5C3B0 /* SceneDelegate.swift */; };
+		4925C37A2634255900F5C3B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4925C368263423D300F5C3B0 /* LaunchScreen.storyboard */; };
+		4925C37B2634255900F5C3B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4925C366263423D300F5C3B0 /* Assets.xcassets */; };
+		4925C37C2634255900F5C3B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4925C363263423D000F5C3B0 /* Main.storyboard */; };
+		4925C387263425F100F5C3B0 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4925C386263425F100F5C3B0 /* MapKit.framework */; };
+		4925C39C2634309E00F5C3B0 /* Transactions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4925C39B2634309E00F5C3B0 /* Transactions.storyboard */; };
+		4925C3A7263432D500F5C3B0 /* Add.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4925C3A6263432D500F5C3B0 /* Add.storyboard */; };
+		4925C3AB2634330300F5C3B0 /* Budget.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4925C3AA2634330300F5C3B0 /* Budget.storyboard */; };
+		4925C3B12634332000F5C3B0 /* Statistics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4925C3B02634332000F5C3B0 /* Statistics.storyboard */; };
+		4925C3B72634333700F5C3B0 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4925C3B62634333700F5C3B0 /* Profile.storyboard */; };
+		4925C3BD2634340F00F5C3B0 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4925C3BC2634340F00F5C3B0 /* SignIn.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +37,16 @@
 		4925C366263423D300F5C3B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4925C369263423D300F5C3B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4925C36B263423D300F5C3B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4925C3802634255900F5C3B0 /* Production.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Production.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4925C3812634255900F5C3B0 /* Production.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Production.plist; path = /Users/sergio/Desktop/FinanceApp/Production.plist; sourceTree = "<absolute>"; };
+		4925C384263425E200F5C3B0 /* Production.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Production.entitlements; sourceTree = "<group>"; };
+		4925C386263425F100F5C3B0 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		4925C39B2634309E00F5C3B0 /* Transactions.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Transactions.storyboard; sourceTree = "<group>"; };
+		4925C3A6263432D500F5C3B0 /* Add.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Add.storyboard; sourceTree = "<group>"; };
+		4925C3AA2634330300F5C3B0 /* Budget.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Budget.storyboard; sourceTree = "<group>"; };
+		4925C3B02634332000F5C3B0 /* Statistics.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Statistics.storyboard; sourceTree = "<group>"; };
+		4925C3B62634333700F5C3B0 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		4925C3BC2634340F00F5C3B0 /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,14 +57,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4925C3782634255900F5C3B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4925C387263425F100F5C3B0 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		4925C351263423D000F5C3B0 = {
 			isa = PBXGroup;
 			children = (
+				4925C384263425E200F5C3B0 /* Production.entitlements */,
 				4925C35C263423D000F5C3B0 /* FinanceApp */,
 				4925C35B263423D000F5C3B0 /* Products */,
+				4925C385263425F100F5C3B0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				4925C35A263423D000F5C3B0 /* FinanceApp.app */,
+				4925C3802634255900F5C3B0 /* Production.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +90,142 @@
 		4925C35C263423D000F5C3B0 /* FinanceApp */ = {
 			isa = PBXGroup;
 			children = (
-				4925C35D263423D000F5C3B0 /* AppDelegate.swift */,
-				4925C35F263423D000F5C3B0 /* SceneDelegate.swift */,
-				4925C361263423D000F5C3B0 /* ViewController.swift */,
-				4925C363263423D000F5C3B0 /* Main.storyboard */,
-				4925C366263423D300F5C3B0 /* Assets.xcassets */,
-				4925C368263423D300F5C3B0 /* LaunchScreen.storyboard */,
-				4925C36B263423D300F5C3B0 /* Info.plist */,
+				4925C38C263426F300F5C3B0 /* Resources */,
+				4925C389263426B800F5C3B0 /* Base */,
+				4925C388263426A000F5C3B0 /* Application */,
 			);
 			path = FinanceApp;
+			sourceTree = "<group>";
+		};
+		4925C385263425F100F5C3B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4925C386263425F100F5C3B0 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4925C388263426A000F5C3B0 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				4925C38F2634275000F5C3B0 /* Main */,
+				4925C38E2634273A00F5C3B0 /* Authentication */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		4925C389263426B800F5C3B0 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				4925C35F263423D000F5C3B0 /* SceneDelegate.swift */,
+				4925C35D263423D000F5C3B0 /* AppDelegate.swift */,
+				4925C368263423D300F5C3B0 /* LaunchScreen.storyboard */,
+				4925C36B263423D300F5C3B0 /* Info.plist */,
+				4925C3812634255900F5C3B0 /* Production.plist */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		4925C38C263426F300F5C3B0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4925C38D2634271800F5C3B0 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4925C38D2634271800F5C3B0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4925C366263423D300F5C3B0 /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		4925C38E2634273A00F5C3B0 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				4925C3912634276A00F5C3B0 /* SignIn */,
+				4925C3902634275B00F5C3B0 /* OnBoarding */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		4925C38F2634275000F5C3B0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4925C3A32634316E00F5C3B0 /* Budget */,
+				4925C3A22634316600F5C3B0 /* Statistics */,
+				4925C3A12634316100F5C3B0 /* Add */,
+				4925C3942634278A00F5C3B0 /* Main */,
+				4925C3932634278200F5C3B0 /* Profile */,
+				4925C3922634277900F5C3B0 /* Transactions */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4925C3902634275B00F5C3B0 /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		4925C3912634276A00F5C3B0 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				4925C3BC2634340F00F5C3B0 /* SignIn.storyboard */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		4925C3922634277900F5C3B0 /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				4925C39B2634309E00F5C3B0 /* Transactions.storyboard */,
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		4925C3932634278200F5C3B0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				4925C3B62634333700F5C3B0 /* Profile.storyboard */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		4925C3942634278A00F5C3B0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4925C361263423D000F5C3B0 /* ViewController.swift */,
+				4925C363263423D000F5C3B0 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4925C3A12634316100F5C3B0 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				4925C3A6263432D500F5C3B0 /* Add.storyboard */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		4925C3A22634316600F5C3B0 /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				4925C3B02634332000F5C3B0 /* Statistics.storyboard */,
+			);
+			path = Statistics;
+			sourceTree = "<group>";
+		};
+		4925C3A32634316E00F5C3B0 /* Budget */ = {
+			isa = PBXGroup;
+			children = (
+				4925C3AA2634330300F5C3B0 /* Budget.storyboard */,
+			);
+			path = Budget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +246,23 @@
 			name = FinanceApp;
 			productName = FinanceApp;
 			productReference = 4925C35A263423D000F5C3B0 /* FinanceApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4925C3732634255900F5C3B0 /* Production */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4925C37D2634255900F5C3B0 /* Build configuration list for PBXNativeTarget "Production" */;
+			buildPhases = (
+				4925C3742634255900F5C3B0 /* Sources */,
+				4925C3782634255900F5C3B0 /* Frameworks */,
+				4925C3792634255900F5C3B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Production;
+			productName = FinanceApp;
+			productReference = 4925C3802634255900F5C3B0 /* Production.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -115,6 +293,7 @@
 			projectRoot = "";
 			targets = (
 				4925C359263423D000F5C3B0 /* FinanceApp */,
+				4925C3732634255900F5C3B0 /* Production */,
 			);
 		};
 /* End PBXProject section */
@@ -126,7 +305,23 @@
 			files = (
 				4925C36A263423D300F5C3B0 /* LaunchScreen.storyboard in Resources */,
 				4925C367263423D300F5C3B0 /* Assets.xcassets in Resources */,
+				4925C3B72634333700F5C3B0 /* Profile.storyboard in Resources */,
+				4925C3A7263432D500F5C3B0 /* Add.storyboard in Resources */,
+				4925C3BD2634340F00F5C3B0 /* SignIn.storyboard in Resources */,
 				4925C365263423D000F5C3B0 /* Main.storyboard in Resources */,
+				4925C39C2634309E00F5C3B0 /* Transactions.storyboard in Resources */,
+				4925C3B12634332000F5C3B0 /* Statistics.storyboard in Resources */,
+				4925C3AB2634330300F5C3B0 /* Budget.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4925C3792634255900F5C3B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4925C37A2634255900F5C3B0 /* LaunchScreen.storyboard in Resources */,
+				4925C37B2634255900F5C3B0 /* Assets.xcassets in Resources */,
+				4925C37C2634255900F5C3B0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +335,16 @@
 				4925C362263423D000F5C3B0 /* ViewController.swift in Sources */,
 				4925C35E263423D000F5C3B0 /* AppDelegate.swift in Sources */,
 				4925C360263423D000F5C3B0 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4925C3742634255900F5C3B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4925C3752634255900F5C3B0 /* ViewController.swift in Sources */,
+				4925C3762634255900F5C3B0 /* AppDelegate.swift in Sources */,
+				4925C3772634255900F5C3B0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +492,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FinanceApp/Info.plist;
+				INFOPLIST_FILE = FinanceApp/Base/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,7 +500,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.minimalDev.FinanceApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,7 +510,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = FinanceApp/Info.plist;
+				INFOPLIST_FILE = FinanceApp/Base/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,7 +518,45 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.minimalDev.FinanceApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		4925C37E2634255900F5C3B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Production.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "FinanceApp copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.minimalDev.FinanceApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		4925C37F2634255900F5C3B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Production.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "FinanceApp copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.minimalDev.FinanceApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -334,6 +577,15 @@
 			buildConfigurations = (
 				4925C36F263423D300F5C3B0 /* Debug */,
 				4925C370263423D300F5C3B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4925C37D2634255900F5C3B0 /* Build configuration list for PBXNativeTarget "Production" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4925C37E2634255900F5C3B0 /* Debug */,
+				4925C37F2634255900F5C3B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
