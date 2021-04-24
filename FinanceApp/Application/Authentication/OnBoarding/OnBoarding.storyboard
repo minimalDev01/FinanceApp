@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cuo-XG-J61">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--On Boarding Container View Controller-->
+        <scene sceneID="1Cw-W1-hCw">
+            <objects>
+                <viewController id="Cuo-XG-J61" customClass="OnBoardingContainerViewController" customModule="FinanceApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a5n-ep-ng3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xGn-Yq-unh">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <connections>
+                                    <segue destination="Z4v-bZ-8GX" kind="embed" identifier="openOnBoarding" id="oI6-9H-3bi"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cC4-SZ-rRe">
+                                <rect key="frame" x="20" y="797" width="374" height="45"/>
+                                <color key="backgroundColor" name="GreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="VVk-GZ-dIq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="0.0" height="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderUIColor">
+                                        <color key="value" name="GreenShadow"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="AAM-WA-3jE" kind="presentation" identifier="SignIn" id="pm9-Ts-qHs"/>
+                                </connections>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="dFS-7n-bNO">
+                                <rect key="frame" x="145.5" y="686" width="123" height="28"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pageControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Nx-os-04v"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xGn-Yq-unh" firstAttribute="leading" secondItem="6Nx-os-04v" secondAttribute="leading" id="02h-6z-F0n"/>
+                            <constraint firstItem="xGn-Yq-unh" firstAttribute="top" secondItem="a5n-ep-ng3" secondAttribute="top" id="1WL-Nz-4Ob"/>
+                            <constraint firstItem="dFS-7n-bNO" firstAttribute="centerX" secondItem="a5n-ep-ng3" secondAttribute="centerX" id="8uf-av-LZq"/>
+                            <constraint firstItem="cC4-SZ-rRe" firstAttribute="top" secondItem="dFS-7n-bNO" secondAttribute="bottom" constant="83" id="FVN-FR-9l9"/>
+                            <constraint firstItem="6Nx-os-04v" firstAttribute="trailing" secondItem="cC4-SZ-rRe" secondAttribute="trailing" constant="20" id="QRX-iA-Uzz"/>
+                            <constraint firstItem="cC4-SZ-rRe" firstAttribute="leading" secondItem="6Nx-os-04v" secondAttribute="leading" constant="20" id="XO4-aA-k0N"/>
+                            <constraint firstItem="6Nx-os-04v" firstAttribute="bottom" secondItem="cC4-SZ-rRe" secondAttribute="bottom" constant="20" id="b5F-wp-hda"/>
+                            <constraint firstAttribute="bottom" secondItem="xGn-Yq-unh" secondAttribute="bottom" id="yVc-ti-6rQ"/>
+                            <constraint firstItem="6Nx-os-04v" firstAttribute="trailing" secondItem="xGn-Yq-unh" secondAttribute="trailing" id="zqy-0k-UBN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="dFS-7n-bNO" id="HgK-TG-zqg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TGv-Zt-0rM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2074" y="132"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="6bN-xf-Pug">
+            <objects>
+                <viewControllerPlaceholder id="AAM-WA-3jE" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TF4-Kp-6qE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2074" y="644"/>
+        </scene>
+        <!--On Boarding View Controller-->
+        <scene sceneID="ufw-h0-o9j">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Z4v-bZ-8GX" customClass="OnBoardingViewController" customModule="FinanceApp" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3jE-hM-erI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-970" y="132"/>
+        </scene>
+        <!--On Boarding Steps View Controller-->
+        <scene sceneID="UX1-IS-Oih">
+            <objects>
+                <viewController storyboardIdentifier="OnBoardingSteps" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vDD-xe-PEi" customClass="OnBoardingStepsViewController" customModule="FinanceApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0bY-p7-HTY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1aG-xl-wFN">
+                                <rect key="frame" x="107" y="208" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="6mV-4E-Zvd"/>
+                                    <constraint firstAttribute="height" constant="200" id="Ytm-ZJ-7Wx"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Asw-x8-UrU">
+                                <rect key="frame" x="20" y="428" width="374" height="50"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="36"/>
+                                <color key="textColor" name="GreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BvC-hK-m2r">
+                                <rect key="frame" x="20" y="486" width="374" height="23.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" name="GreyColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="51A-zb-geb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1aG-xl-wFN" firstAttribute="centerY" secondItem="0bY-p7-HTY" secondAttribute="centerY" constant="-140" id="ER9-RE-nt0"/>
+                            <constraint firstItem="BvC-hK-m2r" firstAttribute="top" secondItem="Asw-x8-UrU" secondAttribute="bottom" constant="8" id="TM0-Ma-LA1"/>
+                            <constraint firstItem="BvC-hK-m2r" firstAttribute="leading" secondItem="51A-zb-geb" secondAttribute="leading" constant="20" id="WQY-2u-DDZ"/>
+                            <constraint firstItem="Asw-x8-UrU" firstAttribute="top" secondItem="1aG-xl-wFN" secondAttribute="bottom" constant="20" id="WYN-lb-VNF"/>
+                            <constraint firstItem="51A-zb-geb" firstAttribute="trailing" secondItem="Asw-x8-UrU" secondAttribute="trailing" constant="20" id="X3A-ri-ncW"/>
+                            <constraint firstItem="Asw-x8-UrU" firstAttribute="leading" secondItem="51A-zb-geb" secondAttribute="leading" constant="20" id="hRs-Tn-P5H"/>
+                            <constraint firstItem="51A-zb-geb" firstAttribute="trailing" secondItem="BvC-hK-m2r" secondAttribute="trailing" constant="20" id="uAT-wd-YGO"/>
+                            <constraint firstItem="1aG-xl-wFN" firstAttribute="centerX" secondItem="0bY-p7-HTY" secondAttribute="centerX" id="vCj-dZ-zTn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="BvC-hK-m2r" id="6hJ-Me-bT8"/>
+                        <outlet property="onBoardingImage" destination="1aG-xl-wFN" id="cVB-Qq-Tkq"/>
+                        <outlet property="titleLabel" destination="Asw-x8-UrU" id="l6P-Kr-kOq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z5Y-AO-Qx9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="190" y="132"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="GreenColor">
+            <color red="0.62352941176470589" green="0.74117647058823533" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GreenShadow">
+            <color red="0.31764705882352939" green="0.39215686274509803" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GreyColor">
+            <color red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

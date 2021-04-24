@@ -28,6 +28,10 @@
 		4925C3BD2634340F00F5C3B0 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4925C3BC2634340F00F5C3B0 /* SignIn.storyboard */; };
 		4925C3C226344D3200F5C3B0 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4925C3C126344D3200F5C3B0 /* Colors.xcassets */; };
 		4925C3CE263453D900F5C3B0 /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4925C3CD263453D900F5C3B0 /* Shadow.swift */; };
+		4925C3D426345C3B00F5C3B0 /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4925C3D326345C3B00F5C3B0 /* OnBoarding.storyboard */; };
+		4925C3D826345F4F00F5C3B0 /* OnBoardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4925C3D726345F4F00F5C3B0 /* OnBoardingContainerViewController.swift */; };
+		4925C3DC2634607A00F5C3B0 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4925C3DB2634607A00F5C3B0 /* OnBoardingViewController.swift */; };
+		4925C3E02634664F00F5C3B0 /* OnBoardingStepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4925C3DF2634664F00F5C3B0 /* OnBoardingStepsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +55,10 @@
 		4925C3BC2634340F00F5C3B0 /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignIn.storyboard; sourceTree = "<group>"; };
 		4925C3C126344D3200F5C3B0 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		4925C3CD263453D900F5C3B0 /* Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadow.swift; sourceTree = "<group>"; };
+		4925C3D326345C3B00F5C3B0 /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
+		4925C3D726345F4F00F5C3B0 /* OnBoardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingContainerViewController.swift; sourceTree = "<group>"; };
+		4925C3DB2634607A00F5C3B0 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		4925C3DF2634664F00F5C3B0 /* OnBoardingStepsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingStepsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +181,10 @@
 		4925C3902634275B00F5C3B0 /* OnBoarding */ = {
 			isa = PBXGroup;
 			children = (
+				4925C3D326345C3B00F5C3B0 /* OnBoarding.storyboard */,
+				4925C3D726345F4F00F5C3B0 /* OnBoardingContainerViewController.swift */,
+				4925C3DB2634607A00F5C3B0 /* OnBoardingViewController.swift */,
+				4925C3DF2634664F00F5C3B0 /* OnBoardingStepsViewController.swift */,
 			);
 			path = OnBoarding;
 			sourceTree = "<group>";
@@ -325,6 +337,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4925C3D426345C3B00F5C3B0 /* OnBoarding.storyboard in Resources */,
 				4925C36A263423D300F5C3B0 /* LaunchScreen.storyboard in Resources */,
 				4925C367263423D300F5C3B0 /* Assets.xcassets in Resources */,
 				4925C3B72634333700F5C3B0 /* Profile.storyboard in Resources */,
@@ -357,6 +370,9 @@
 			files = (
 				4925C362263423D000F5C3B0 /* ViewController.swift in Sources */,
 				4925C3CE263453D900F5C3B0 /* Shadow.swift in Sources */,
+				4925C3D826345F4F00F5C3B0 /* OnBoardingContainerViewController.swift in Sources */,
+				4925C3DC2634607A00F5C3B0 /* OnBoardingViewController.swift in Sources */,
+				4925C3E02634664F00F5C3B0 /* OnBoardingStepsViewController.swift in Sources */,
 				4925C35E263423D000F5C3B0 /* AppDelegate.swift in Sources */,
 				4925C360263423D000F5C3B0 /* SceneDelegate.swift in Sources */,
 			);
