@@ -18,7 +18,7 @@
                         <viewLayoutGuide key="safeArea" id="y4L-Yv-dTN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" id="R9z-9t-HhI"/>
+                    <tabBarItem key="tabBarItem" title="" image="TabBarPlusButton" id="R9z-9t-HhI"/>
                     <navigationItem key="navigationItem" id="yQE-dZ-7mc"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
@@ -47,6 +47,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="TabBarPlusButton" width="10" height="10"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
