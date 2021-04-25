@@ -34,6 +34,7 @@
 		4925C3E02634664F00F5C3B0 /* OnBoardingStepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4925C3DF2634664F00F5C3B0 /* OnBoardingStepsViewController.swift */; };
 		4955950B2635692C0014E3DD /* TransactionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4955950A2635692C0014E3DD /* TransactionsCell.xib */; };
 		4955950F26356B180014E3DD /* BudgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4955950E26356B170014E3DD /* BudgetViewController.swift */; };
+		49559513263574D90014E3DD /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49559512263574D90014E3DD /* StatisticsViewController.swift */; };
 		49B47C222634BB6200D5B294 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B47C212634BB6200D5B294 /* TransactionsViewController.swift */; };
 		49B47C262634C31200D5B294 /* EmptyState.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49B47C252634C31200D5B294 /* EmptyState.xib */; };
 		49B47C2A2634CF5500D5B294 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B47C292634CF5500D5B294 /* TabBarViewController.swift */; };
@@ -66,6 +67,7 @@
 		4925C3DF2634664F00F5C3B0 /* OnBoardingStepsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingStepsViewController.swift; sourceTree = "<group>"; };
 		4955950A2635692C0014E3DD /* TransactionsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionsCell.xib; sourceTree = "<group>"; };
 		4955950E26356B170014E3DD /* BudgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetViewController.swift; sourceTree = "<group>"; };
+		49559512263574D90014E3DD /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
 		49B47C212634BB6200D5B294 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
 		49B47C252634C31200D5B294 /* EmptyState.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyState.xib; sourceTree = "<group>"; };
 		49B47C292634CF5500D5B294 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
@@ -248,6 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				4925C3B02634332000F5C3B0 /* Statistics.storyboard */,
+				49559512263574D90014E3DD /* StatisticsViewController.swift */,
 			);
 			path = Statistics;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 				4925C3D826345F4F00F5C3B0 /* OnBoardingContainerViewController.swift in Sources */,
 				4925C3DC2634607A00F5C3B0 /* OnBoardingViewController.swift in Sources */,
 				49B47C2A2634CF5500D5B294 /* TabBarViewController.swift in Sources */,
+				49559513263574D90014E3DD /* StatisticsViewController.swift in Sources */,
 				4925C3E02634664F00F5C3B0 /* OnBoardingStepsViewController.swift in Sources */,
 				4925C35E263423D000F5C3B0 /* AppDelegate.swift in Sources */,
 				4955950F26356B180014E3DD /* BudgetViewController.swift in Sources */,
