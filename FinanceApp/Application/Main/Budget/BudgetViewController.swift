@@ -10,6 +10,22 @@ import UIKit
 class BudgetViewController: UIViewController {
     // MARK: -IBOutlets
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet var animationButtons: [UIButton]!
+    @IBOutlet weak var animationLayout: NSLayoutConstraint!
+    
+    // MARK: -IBActions
+    @IBAction func animateHeader(sender: UIButton) {
+        animationLayout.constant = sender.frame.origin.x
+        UIView.animate(withDuration: 0.5) {
+            self.view.layoutIfNeeded()
+        } completion: { (completed) in
+            self.animationButtons.forEach {
+                $0.setTitleColor(UIColor(named: "TextColor"), for: .normal)
+                sender.setTitleColor(UIColor.white, for: .normal)
+            }
+        }
+
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

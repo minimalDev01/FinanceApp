@@ -20,10 +20,69 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mzC-RG-mR4">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <view key="tableFooterView" contentMode="scaleToFill" id="Gmj-8e-OYo">
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="Gmj-8e-OYo">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vGS-wR-Bbp">
+                                            <rect key="frame" x="57" y="-3" width="100" height="50"/>
+                                            <color key="backgroundColor" name="GreenColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="4bi-A9-Wfy"/>
+                                                <constraint firstAttribute="width" constant="100" id="eUT-a6-kZB"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="22"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Mzn-sA-obP">
+                                            <rect key="frame" x="57" y="-3" width="300" height="50"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mgc-Hl-r9h">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                                                    <state key="normal" title="INCOMING">
+                                                        <color key="titleColor" name="TextColor"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="animateHeaderWithSender:" destination="4Vh-37-tGr" eventType="touchUpInside" id="YM5-dU-i2O"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="fln-GS-uQo">
+                                                    <rect key="frame" x="100" y="0.0" width="100" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="ALL">
+                                                        <color key="titleColor" name="TextColor"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="animateHeaderWithSender:" destination="4Vh-37-tGr" eventType="touchUpInside" id="fvY-ja-o5z"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="iwe-4U-4V0">
+                                                    <rect key="frame" x="200" y="0.0" width="100" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="EXPENSES">
+                                                        <color key="titleColor" name="TextColor"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="animateHeaderWithSender:" destination="4Vh-37-tGr" eventType="touchUpInside" id="cGr-Sk-Yxf"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="300" id="Ykk-Mh-sbS"/>
+                                                <constraint firstAttribute="height" constant="50" id="z2A-d4-5vX"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="vGS-wR-Bbp" firstAttribute="leading" secondItem="Mzn-sA-obP" secondAttribute="leading" id="0me-KX-dQe"/>
+                                        <constraint firstItem="vGS-wR-Bbp" firstAttribute="centerY" secondItem="Gmj-8e-OYo" secondAttribute="centerY" id="HF1-Ib-2HE"/>
+                                        <constraint firstItem="Mzn-sA-obP" firstAttribute="centerY" secondItem="Gmj-8e-OYo" secondAttribute="centerY" id="JgM-gQ-Mum"/>
+                                        <constraint firstItem="Mzn-sA-obP" firstAttribute="centerX" secondItem="Gmj-8e-OYo" secondAttribute="centerX" id="vhV-jW-YLQ"/>
+                                    </constraints>
                                 </view>
                                 <connections>
                                     <outlet property="dataSource" destination="4Vh-37-tGr" id="3dE-Zg-4dr"/>
@@ -44,7 +103,11 @@
                     <navigationItem key="navigationItem" title="Budget" id="Sis-7Y-8Vf"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="animationLayout" destination="0me-KX-dQe" id="jfQ-2G-Wp4"/>
                         <outlet property="tableView" destination="mzC-RG-mR4" id="c2U-d2-Pfy"/>
+                        <outletCollection property="animationButtons" destination="Mgc-Hl-r9h" collectionClass="NSMutableArray" id="8hm-bq-QOe"/>
+                        <outletCollection property="animationButtons" destination="fln-GS-uQo" collectionClass="NSMutableArray" id="zgN-fh-39B"/>
+                        <outletCollection property="animationButtons" destination="iwe-4U-4V0" collectionClass="NSMutableArray" id="tnZ-jj-m6F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z28-xO-JIp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -76,6 +139,9 @@
         <image name="TabBarBudget" width="20" height="26"/>
         <namedColor name="GreenColor">
             <color red="0.62352941176470589" green="0.74117647058823533" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextColor">
+            <color red="0.14117647058823529" green="0.16862745098039217" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
