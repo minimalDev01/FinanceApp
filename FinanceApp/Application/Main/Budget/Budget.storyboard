@@ -3,24 +3,49 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Budget-->
         <scene sceneID="CcA-0e-WGw">
             <objects>
-                <viewController id="4Vh-37-tGr" sceneMemberID="viewController">
+                <viewController id="4Vh-37-tGr" customClass="BudgetViewController" customModule="FinanceApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VKv-OJ-vkL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mzC-RG-mR4">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="Gmj-8e-OYo">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
+                                <connections>
+                                    <outlet property="dataSource" destination="4Vh-37-tGr" id="3dE-Zg-4dr"/>
+                                    <outlet property="delegate" destination="4Vh-37-tGr" id="v2y-RB-D5X"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Lee-MZ-T7i"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Lee-MZ-T7i" firstAttribute="trailing" secondItem="mzC-RG-mR4" secondAttribute="trailing" id="IpJ-IR-Qb4"/>
+                            <constraint firstItem="Lee-MZ-T7i" firstAttribute="bottom" secondItem="mzC-RG-mR4" secondAttribute="bottom" id="N5J-k8-liv"/>
+                            <constraint firstItem="mzC-RG-mR4" firstAttribute="top" secondItem="Lee-MZ-T7i" secondAttribute="top" id="kBy-o9-2xK"/>
+                            <constraint firstItem="mzC-RG-mR4" firstAttribute="leading" secondItem="Lee-MZ-T7i" secondAttribute="leading" id="qLV-qC-6qV"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="TabBarBudget" id="kex-xe-bhf"/>
-                    <navigationItem key="navigationItem" id="Sis-7Y-8Vf"/>
+                    <navigationItem key="navigationItem" title="Budget" id="Sis-7Y-8Vf"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="mzC-RG-mR4" id="c2U-d2-Pfy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z28-xO-JIp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -32,9 +57,10 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hMQ-2R-lEW" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="dNh-Vy-Uuc"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bic-Ax-u5V">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Bic-Ax-u5V">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="GreenColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -48,6 +74,9 @@
     </scenes>
     <resources>
         <image name="TabBarBudget" width="20" height="26"/>
+        <namedColor name="GreenColor">
+            <color red="0.62352941176470589" green="0.74117647058823533" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
